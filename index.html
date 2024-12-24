@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>EDENH2</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link href="img/logo.png" rel="icon">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/aos.css" rel="stylesheet">
+    <link href="css/glightbox.min.css" rel="stylesheet">
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <style>
+      .cv-form {
+    padding: 2em 0;
+  }
+
+  .form-container {
+    margin-top: 1em;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .cv-submission-form .form-group {
+    margin-bottom: 1.5em;
+  }
+
+  .cv-submission-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #2c3e50;
+  }
+
+  .cv-submission-form input,
+  .cv-submission-form select,
+  .cv-submission-form textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+
+  .cv-submission-form textarea {
+    resize: vertical;
+  }
+
+  .cv-submission-form .submit-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+
+  .cv-submission-form .submit-btn:hover {
+    background-color: #2980b9;
+  }
+  .privacy-policy {
+    padding: 2em 0;
+  }
+
+  .privacy-content h3 {
+    color: #2c3e50;
+    margin-top: 1.5em;
+  }
+
+  .privacy-content p, .privacy-content ul {
+    color: #7f8c8d;
+    margin-bottom: 1em;
+    line-height: 1.6;
+  }
+
+  .privacy-content ul {
+    list-style-type: disc;
+    margin-left: 1.5em;
+  }
+
+  address {
+    font-style: normal;
+    color: #2c3e50;
+    margin-top: 1em;
+  }
+
+  address a {
+    color: #3498db;
+    text-decoration: none;
+  }
+
+  address a:hover {
+    text-decoration: underline;
+  }
+  .terms {
+    padding: 2em 0;
+  }
+
+  .terms-content ol {
+    counter-reset: list-counter;
+  }
+
+  .terms-content ol > li {
+    margin-bottom: 1.5em;
+  }
+
+  .terms-content h3 {
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+
+  .terms-content p,
+  .terms-content ul li {
+    color: #7f8c8d;
+    line-height: 1.6em;
+  }
+
+  .terms-content ul {
+    margin-top: 0.5em;
+    padding-left: 1.5em;
+  }
+
+  .terms-content ul li {
+    margin-bottom: 0.5em;
+  }
+
+  .terms-content a {
+    color: #3498db;
+    text-decoration: none;
+  }
+
+  .terms-content a:hover {
+    text-decoration: underline;
+  }
+  .opportunities {
+    padding: 2em 0;
+  }
+
+  .opportunities-list {
+    margin-top: 1em;
+  }
+
+  .opportunity {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .opportunity h3 {
+    margin-bottom: 0.5em;
+    color: #2c3e50;
+  }
+
+  .opportunity p {
+    margin: 0.5em 0;
+    color: #7f8c8d;
+  }
+
+  .section-title a {
+    color: #3498db;
+    text-decoration: none;
+  }
+
+  .section-title a:hover {
+    text-decoration: underline;
+  }
+  .services {
+    padding: 2em 0;
+  }
+
+  .services-list {
+    margin-top: 1em;
+  }
+
+  .service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 100%; /* Ensures uniform height */
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-item .image img {
+  width: 100%; /* Ensures image fits the card width */
+  height: 150px; /* Adjust image height as needed */
+  object-fit: cover; /* Ensures the image is cropped properly */
+  border-radius: 8px;
+}
+
+.service-item h3 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+}
+
+.service-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+.service-item:hover {
+  transform: translateY(-10px); /* Hover effect for better UX */
+}
+
+/* .row.gy-4 .col-lg-3 {
+  display: flex;
+  align-items: stretch;
+} */
+
+  .service ul {
+    list-style: disc;
+    margin: 0;
+    padding-left: 1.5em;
+    color: #7f8c8d;
+  }
+
+  .service ul li {
+    margin-bottom: 0.5em;
+  }
+
+  .section-title h2 {
+    color: #3498db;
+  }
+
+  #hero {
+      position: relative;
+      background: url('img/bg.jpg') no-repeat center center/cover;
+      color: #ffffff;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #hero h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    #hero p {
+      font-size: 1.8rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .btn-get-started {
+      display: inline-block;
+      background-color: #4caf50; /* Green button */
+      color: #fff;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .btn-get-started:hover {
+      background-color: #388e3c; /* Darker green on hover */
+      transform: scale(1.05);
+    }
+    @media (max-width: 768px) {
+    #hero {
+        height: 115vh; /* Adjust height for mobile */
+        background-position: center center; /* Ensure background is centered */
+    }
+  }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@5.15.4/css/all.min.css">
+
+  </head>
+
+  <body class="index-page" data-aos-easing="ease-in-out" data-aos-duration="600" data-aos-delay="0">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+          <img src="img/logo.png" alt="">
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li class="dropdown">
+              <a href="index.html#solutions"><span>Solutions</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="Micro-Gas-Turbine.html">Micro Gas Turbine</a></li>
+              
+                <li><a href="Gas-Sensing.html">Gas Sensing</a></li>
+                <li><a href="Hydrogen-Storage.html">Hydrogen Storage</a></li>
+                <li><a href="Electrolyser-Technology.html">Electrolyser Technology</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#team">Our Team</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+            <li><a href="index.html#careers">Careers</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="header-social-links">
+          <a href="https://x.com/EDENH2DIR" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61568444634816" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/edhenh2" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section id="hero" class="hero section">
+        <img src="  " alt="" data-aos="fade-in" class="aos-init aos-animate">
+
+        <div class="container text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h2 style="color: var(--heading-color);">Welcome to Eden H2</h2>
+              <p>
+                A leader in advancing the future of clean energy through innovative hydrogen technologies. At Eden H2, we are dedicated to integrating renewable energy with cutting-edge hydrogen solutions to create environmentally safe and efficient energy storage systems. Our commitment extends beyond just developing low-carbon, cost-effective technologies; we strive to make a significant impact in domestic and industrial sectors by promoting the use of clean energy. By focusing on smart cities, utilities, energy sectors, and safety, we aim to drive sustainable progress and shape a greener future for all.
+              </p>
+              <a href="index.html#contact" class="btn-get-started">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <style>
+        #about {
+          background-color: #f9f9f9;
+          padding: 60px 0;
+        }
+      
+        #about h2, #about h3 {
+          color: #333;
+        }
+      
+        #about img {
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+      
+        .mission-vision ul li {
+          display: flex;
+          align-items: flex-start;
+          gap: 15px;
+          margin-bottom: 20px;
+        }
+      
+        .mission-vision ul li h4 {
+          color: #00796b;
+          font-weight: bold;
+        }
+      
+        .mission-vision ul li p {
+          margin: 0;
+        }
+      
+        .about-content ul li {
+          display: flex;
+          align-items: flex-start;
+          gap: 15px;
+          margin-bottom: 20px;
+        }
+      
+        .about-content ul li h4 {
+          color: #00796b;
+          font-weight: bold;
+        }
+      
+        .about-content ul li p {
+          margin: 0;
+        }
+      
+        .about-content ul li i {
+          font-size: 1.5rem;
+          color: #00796b;
+        }
+      
+        .about-content .fst-italic {
+          color: #555;
+          margin: 20px 0;
+          font-size: 1.2rem;
+        }
+      </style>
+      
+      <section id="about" class="about section">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>About Us</h2>
+        </div>
+        <div class="container">
+          <div class="row gy-3">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <img src="img/about.jpg" alt="Hydrogen Technology" class="img-fluid">
+      
+              <div class="mission-vision" style="margin-top: 40px">
+                <ul>
+                  <li>
+                    <i class="fa fa-bullseye"></i>
+                    <div>
+                      <h4>Mission:</h4>
+                      <p>
+                        Highlighting your commitment to providing cost-effective solutions.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa fa-eye"></i>
+                    <div>
+                      <h4>Vision:</h4>
+                      <p>
+                        Delivering global net-zero energy by adopting the latest technologies with the highest safety and quality standards.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="about-content ps-0 ps-lg-3">
+                <h3>Company Overview:</h3>
+                <p>
+                  Eden H2 is a socially responsible company providing innovative technological solutions for integrating renewable energy with disruptive hydrogen technologies for creating environmentally safe energy storage solutions and promoting the use of clean energy in various domestic and industrial sectors.<br>
+                  The company designs, develops, manufactures, and installs low-carbon, low-cost hydrogen technologies for efficient energy solutions. The company also provides integration solutions to cater Power-to-X and X-to-Power requirements at domestic and industrial scale.<br>
+                  We offer our EPC services predominantly in thrust areas such as Smart Cities, Utilities & Energy Sector, Sensor Integration, and Safety.
+                </p>
+      
+                <h3>Our Mission, Vision, and Values</h3>
+                <p class="fst-italic">
+                  “Affordable, reliable, sustainable and renewable energy for all.”
+                </p>
+                <ul>
+                  <li>
+                    <i class="fas fa-dollar-sign"></i>
+                    <div>
+                      <h4>Affordability:</h4>
+                      <p>Highlighting your commitment to providing cost-effective solutions.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa fa-check"></i>
+                    <div>
+                      <h4>Reliability:</h4>
+                      <p>Ensuring that your technologies are dependable and perform consistently.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-leaf"></i>
+                    <div>
+                      <h4>Sustainability:</h4>
+                      <p>Underlining your focus on environmentally friendly practices.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fas fa-sun"></i>
+                    <div>
+                      <h4>Renewable Energy:</h4>
+                      <p>Emphasizing the use of clean, renewable sources.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="solutions" class="services section light-background">
+        <div class="container section-title aos-init" data-aos="fade-up">
+          <h2>Our Solutions</h2>
+        </div>
+      
+        <div class="container">
+          <div class="row gy-4">
+            <!-- Micro Gas Turbine -->
+            <div class="col-lg-3 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item position-relative">
+                <div class="image">
+                  <img src="img/micro-gas-turbine.jpg" alt="Micro Gas Turbine" class="img-fluid">
+                </div>
+                <a href="Micro-Gas-Turbine.html" class="stretched-link">
+                  <h3>Micro Gas Turbine (MGT)</h3>
+                </a>
+                <p>
+                  Traditional centralized energy systems are increasingly
+                  recognized as inefficient, leading to significant energy loss
+                  and economic waste. To address this, small-scale energy
+                  systems ...
+                </p>
+              </div>
+            </div>
+      
+            <!-- Gas Sensing and Leak Detection -->
+            <div class="col-lg-3 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item position-relative">
+                <div class="image">
+                  <img src="img/gas-sensing.jpg" alt="Gas Sensing and Leak Detection" class="img-fluid">
+                </div>
+                <a href="Gas-Sensing.html" class="stretched-link">
+                  <h3>Gas Sensing and Leak Detection Technology</h3>
+                </a>
+                <p>
+                  As hydrogen becomes a key player in clean energy solutions,
+                  safety in its handling and storage is paramount. At EDENH2, we
+                  specialize in advanced gas sensing and ...
+                </p>
+              </div>
+            </div>
+      
+            <!-- Hydrogen Storage and Transport -->
+            <div class="col-lg-3 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item position-relative">
+                <div class="image">
+                  <img src="img/hydrogen-storage.jpg" alt="Hydrogen Storage and Transport" class="img-fluid">
+                </div>
+                <a href="Hydrogen-Storage.html" class="stretched-link">
+                  <h3>Hydrogen Storage and Transport</h3>
+                </a>
+                <p>
+                  Efficient hydrogen storage and transport systems are crucial
+                  for the hydrogen economy to thrive. EDENH2 offers cutting-edge
+                  storage solutions customized to the needs ...
+                </p>
+              </div>
+            </div>
+      
+            <!-- Electrolyser Technology -->
+            <div class="col-lg-3 col-md-6 aos-init" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item position-relative">
+                <div class="image">
+                  <img src="img/electrolyser-technology.jpg" alt="Electrolyser Technology" class="img-fluid">
+                </div>
+                <a href="Electrolyser-Technology.html" class="stretched-link">
+                  <h3>Electrolyser Technology</h3>
+                </a>
+                <p>
+                  As global demand for hydrogen rises, EDENH2’s electrolyser
+                  systems offer efficient and customizable solutions for
+                  hydrogen production. Our electrolysers use renewable energy
+                  sources to produce hydrogen ...
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>      
+
+      <section id="what-we-do" class="services section light-background" style="background-color: #f0f4f8; padding: 60px 0;">
+        <div class="container section-title aos-init" data-aos="fade-up" style="text-align: center;">
+          <h2 style="font-size: 36px; color: #2a3d66;">What We Do</h2>
+          <p style="font-size: 18px; color: #666; max-width: 800px; margin: 0 auto;">
+            We provide manufacturing and design, engineering and innovation, IoT integration, and compliance adaptation of international standards for customized technology turnkey solutions. These solutions facilitate industries' transition to hydrogen-powered futures, addressing the increasing need for renewable energy, industrial decarbonization, and net-zero technologies on a global scale.
+          </p>
+        </div>
+        <div class="container services-list aos-init" data-aos="fade-up" data-aos-delay="100" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 40px;">
+          <div class="service" style="background-color: #dbe8f1; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+            <i class="fas fa-cogs" style="font-size: 40px; color: #2a3d66;"></i>
+            <h3 style="font-size: 24px; color: #2a3d66; margin-top: 20px;">Engineering & Innovation</h3>
+            <p style="color: #555;">Develop low-carbon energy technologies, focus on automation, sensors, and advanced methods, and create innovative software solutions.</p>
+          </div>
+          <div class="service" style="background-color: #e1e6ef; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+            <i class="fas fa-industry" style="font-size: 40px; color: #2a3d66;"></i>
+            <h3 style="font-size: 24px; color: #2a3d66; margin-top: 20px;">Design & Manufacturing</h3>
+            <p style="color: #555;">Work on electrolyzer technology, hydrogen technology, micro gas turbines, and enable "Power to X" and "X to Power" solutions.</p>
+          </div>
+          <div class="service" style="background-color: #dbe8f1; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+            <i class="fas fa-plug" style="font-size: 40px; color: #2a3d66;"></i>
+            <h3 style="font-size: 24px; color: #2a3d66; margin-top: 20px;">IoT Integration</h3>
+            <p style="color: #555;">Develop remote monitoring systems, build web/mobile applications, and implement Digital Twin and real-time monitoring systems.</p>
+          </div>
+          <div class="service" style="background-color: #e1e6ef; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+            <i class="fas fa-check-circle" style="font-size: 40px; color: #2a3d66;"></i>
+            <h3 style="font-size: 24px; color: #2a3d66; margin-top: 20px;">Standards & Compliance</h3>
+            <p style="color: #555;">Conduct system testing and ensure functionality, and obtain necessary certifications to meet international standards.</p>
+          </div>
+          <div class="service" style="background-color: #dbe8f1; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+            <i class="fas fa-tools" style="font-size: 40px; color: #2a3d66;"></i>
+            <h3 style="font-size: 24px; color: #2a3d66; margin-top: 20px;">Support Services</h3>
+            <p style="color: #555;">Offer feasibility studies, provide installation, after-market services, and maintenance to ensure long-term performance.</p>
+          </div>
+          <div class="service" style="background-color: #e1e6ef; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+            <i class="fas fa-truck" style="font-size: 40px; color: #2a3d66;"></i>
+            <h3 style="font-size: 24px; color: #2a3d66; margin-top: 20px;">Sales & Turnkey Solutions</h3>
+            <p style="color: #555;">Deliver fully integrated solutions with a strong emphasis on a global market focus, meeting diverse industry needs.</p>
+          </div>
+        </div>
+      </section>      
+
+      <section class="team-15 team section" id="team">
+        <div class="container section-title aos-init" data-aos="fade-up">
+          <h2>Our Team</h2>
+          <p>
+            Our rainbow core team with variety of skillsets comprises with international culture provides strong experience in innovation, engineering leadership, IoT & Sensing, Edge computing, AI & Data analytics brings vision to empower India to achieve self-reliance & become globally competitive in adopting cutting edge technology.  Our team roots spread over 100+ years of experience in research, design & product development, Software development, EPC, Executive project management, patents and implementation of govt. policies to the society. 
+          </p>
+        </div>
+      </section>
+      <section id="contact" class="contact section">
+        <div class="container section-title aos-init" data-aos="fade-up">
+          <h2>Get in touch with us</h2>
+          <p>Website visitors to request information or get in touch.</p>
+        </div>
+
+        <div class="container position-relative aos-init" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-5">
+              <div class="info-item d-flex aos-init" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>
+                    Kg Vallencia, Apt 1b, 28 First Main Road, <br> Gandhi Nagar Adyar <br>
+                    Chennai, Tamil Nadu, 600020
+                  </p>
+                </div>
+              </div>
+
+              <div class="info-item d-flex aos-init" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Phone</h3>
+                  <p>+91 9840355052</p>
+                </div>
+              </div>
+
+              <div class="info-item d-flex aos-init" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>info@edenh2.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <form action="#" method="post" class="php-email-form aos-init" data-aos="fade-up" data-aos-delay="500">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  </div>
+
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" name="Phone" placeholder="Phone" required="">
+                  </div>
+
+                  <div class="col-md-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
+                    <button type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      <section id="careers" class="testimonials section light-background">
+        <div class="container section-title aos-init" data-aos="fade-up">
+          <h2>Our culture</h2>
+          <p>
+            At Eden H2, we prioritize creating a work culture that feels both like home and a platform for professional growth. Our team thrives in an environment that values flexibility, innovation, and collaboration. We are dedicated to nurturing self-motivated individuals who bring creative ideas and solutions to life, especially in the realm of renewable energy and sustainable technology. By combining a supportive atmosphere with a strong professional focus, we empower our employees to explore new possibilities, contribute meaningfully, and continuously grow within their roles.
+          </p>
+        </div>
+        <div class="container section-title aos-init" data-aos="fade-up">
+          <h2>Upskilling Current Opportunities</h2>
+          <p>
+            Candidates eligible for the following job descriptions can apply directly to 
+            <a href="mailto:raja@edenh2.com">raja@edenh2.com</a>.
+          </p>
+        </div>
+        <div class="container opportunities-list aos-init" data-aos="fade-up" data-aos-delay="100">
+          <div class="opportunity">
+            <h3>Position: Design Engineer</h3>
+            <p><strong>Qualification:</strong> Mechanical Engineer - CAD/CAE, Simulation (FEA/CFD), Project Management.</p>
+          </div>
+          <div class="opportunity">
+            <h3>Position: IoT Engineer</h3>
+            <p><strong>Qualification:</strong> EEE - Process Automation, Fieldbus Communication, Protocols, PLC and Instrumentation.</p>
+          </div>
+          <div class="opportunity">
+            <h3>Position: Embedded Developer</h3>
+            <p><strong>Qualification:</strong> ECE - Embedded C/C++, Python, muC/Raspberry Pi, MQTTS, LoraWan, Mesh Network.</p>
+          </div>
+          <div class="opportunity">
+            <h3>Position: Digital Marketing</h3>
+            <p><strong>Qualification:</strong> MBA with proven track record</p>
+            <p><strong>Job Description:</strong> Develop marketing strategy, create and manage web presence, brand marketing campaign.</p>
+          </div>
+        <div class="container aos-init" data-aos="fade-up" data-aos-delay="100"></div>
+      </section>
+      <section id="cv-submission" class="cv-form section light-background">
+        <div class="container section-title aos-init" data-aos="fade-up">
+          <h2>Submit Your CV</h2>
+          <p>
+            If you meet the qualifications for our current opportunities, we’d love to hear from you. Please fill out the form below to submit your CV.
+          </p>
+        </div>
+        <div class="container form-container aos-init" data-aos="fade-up" data-aos-delay="100">
+          <form action="/submit-cv" method="POST" enctype="multipart/form-data" class="cv-submission-form">
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+              <label for="position">Position Applying For:</label>
+              <select id="position" name="position" required>
+                <option value="" disabled selected>Select a position</option>
+                <option value="design-engineer">Design Engineer</option>
+                <option value="iot-engineer">IoT Engineer</option>
+                <option value="embedded-developer">Embedded Developer</option>
+                <option value="digital-marketing">Digital Marketing</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cv">Upload CV (PDF or DOC):</label>
+              <input type="file" id="cv" name="cv" required accept=".pdf,.doc,.docx">
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Message:</label>
+              <textarea id="message" name="message" rows="4" placeholder="Enter a brief message (optional)"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="submit-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      
+      <section id="terms-and-conditions" class="terms section light-background">
+        <div class="container section-title aos-init" data-aos="fade-up">
+          <h2>Terms and Conditions</h2>
+          <p>
+            Welcome to EDEN H2, a company dedicated to integrating renewable energy with cutting-edge hydrogen solutions to create environmentally safe and efficient energy storage systems. Our commitment extends beyond just developing low-carbon, cost-effective technologies; we strive to make a significant impact in domestic and industrial sectors by promoting the use of clean energy. By focusing on smart cities, utilities, energy sectors, and safety, we aim to drive sustainable progress and shape a greener future for all.
+          </p>
+          <p>
+            By using our website, services, or products, you agree to comply with and be bound by the following terms and conditions. Please read them carefully.
+          </p>
+        </div>
+        <div class="container terms-content aos-init" data-aos="fade-up" data-aos-delay="100">
+          <ol>
+            <li>
+              <h3>Acceptance of Terms</h3>
+              <p>
+                By accessing and using this website (<a href="https://www.edenh2.com">www.edenh2.com</a>) and any of the services provided by EDEN H2 (the "Service"), you agree to abide by these Terms and Conditions, along with any other policies, notices, or guidelines posted on the website. If you do not agree with these Terms, you should not use the website or its services.
+              </p>
+            </li>
+            <li>
+              <h3>Changes to Terms</h3>
+              <p>
+                EDEN H2 reserves the right to modify, update, or revise these Terms and Conditions at any time without prior notice. All changes will be posted on this page, and the revised Terms and Conditions will take effect immediately upon posting. It is your responsibility to review these Terms periodically to stay informed of any changes.
+              </p>
+            </li>
+            <li>
+              <h3>Use of the Website</h3>
+              <p>You agree to use this website for lawful purposes and in accordance with all applicable local, state, and international laws and regulations. You may not use the website:</p>
+              <ul>
+                <li>In any way that violates any applicable laws or regulations</li>
+                <li>To transmit harmful, fraudulent, or illegal content</li>
+                <li>To interfere with the website’s functioning or security</li>
+                <li>To access or attempt to access data or accounts not intended for you</li>
+              </ul>
+            </li>
+            <li>
+              <h3>User Registration</h3>
+              <p>
+                Certain features of the website may require you to create an account. If you register for an account, you are responsible for maintaining the confidentiality of your account information, including your password, and for all activities that occur under your account. You agree to notify EDEN H2 immediately of any unauthorized use of your account.
+              </p>
+            </li>
+            <li>
+              <h3>Intellectual Property</h3>
+              <p>
+                The content, logos, graphics, images, text, videos, and other materials available on the website are owned by EDEN H2 or licensed to EDEN H2 and are protected by intellectual property laws. You may not copy, reproduce, distribute, or create derivative works from any part of this website without the prior written consent of EDEN H2.
+              </p>
+            </li>
+            <li>
+              <h3>Third-Party Links</h3>
+              <p>
+                This website may contain links to third-party websites. These links are provided for your convenience, and EDEN H2 does not control or endorse these websites. By clicking on third-party links, you acknowledge that EDEN H2 is not responsible for the content, privacy policies, or practices of such third-party websites.
+              </p>
+            </li>
+            <li>
+              <h3>Privacy Policy</h3>
+              <p>
+                Your use of the website is also governed by our Privacy Policy, which can be found at <a href="#">[insert link to privacy policy]</a>. By using the website, you consent to the practices outlined in the Privacy Policy.
+              </p>
+            </li>
+            <li>
+              <h3>Limitation of Liability</h3>
+              <p>
+                To the fullest extent permitted by law, EDEN H2 will not be liable for any direct, indirect, incidental, special, or consequential damages arising from your use of the website or its services. This includes, without limitation, damages for loss of profits, data, or other intangible losses, even if EDEN H2 has been advised of the possibility of such damages.
+              </p>
+            </li>
+            <li>
+              <h3>Indemnification</h3>
+              <p>
+                You agree to indemnify, defend, and hold harmless EDEN H2, its officers, directors, employees, agents, and affiliates from any claims, liabilities, losses, damages, or expenses (including legal fees) arising out of your use of the website, violation of these Terms, or infringement of any intellectual property or other rights.
+              </p>
+            </li>
+            <li>
+              <h3>Termination</h3>
+              <p>
+                EDEN H2 reserves the right to suspend or terminate your access to the website and services at any time, without notice, for any reason, including for violations of these Terms and Conditions. Upon termination, your right to use the website will immediately cease.
+              </p>
+            </li>
+            <li>
+              <h3>Governing Law</h3>
+              <p>
+                These Terms and Conditions will be governed by and construed in accordance with the laws of [Insert Jurisdiction]. Any disputes arising under these Terms will be subject to the exclusive jurisdiction of the courts in [Insert Jurisdiction].
+              </p>
+            </li>
+            <li>
+              <h3>Severability</h3>
+              <p>
+                If any provision of these Terms and Conditions is found to be invalid, illegal, or unenforceable, the remaining provisions will remain in full force and effect.
+              </p>
+            </li>
+            <li>
+              <h3>Contact Information</h3>
+              <p>
+                If you have any questions about these Terms and Conditions, please contact us at:
+              </p>
+              <address>
+                <strong>EDENH2</strong><br>
+                Kg Vallencia, Apt 1b, 28 First Main Road, Gandhi Nagar Adyar, Chennai, Tamil Nadu, 600020<br>
+                Email: <a href="mailto:info@edenh2.com">info@edenh2.com</a><br>
+                Phone: <a href="tel:+919840355052">+91 9840355052</a>
+              </address>
+            </li>
+          </ol>
+        </div>
+      </section>      
+      <section id="privacy-policy" class="privacy-policy section">
+        <div class="container section-title aos-init" data-aos="fade-up">
+          <h2>Privacy Policy for EDEN H2</h2>
+          <p><strong>Effective Date:</strong> 10.11.2024</p>
+          <p>
+            At EDEN H2 ("we", "us", "our"), we are committed to protecting and respecting your privacy. This Privacy Policy outlines how we collect, use, store, and protect your personal information when you visit our website 
+            <a href="http://www.edenh2.com" target="_blank">www.edenh2.com</a> (the "Website") or interact with our products and services. By using our Website and services, you consent to the practices described in this Privacy Policy.
+          </p>
+        </div>
+        <div class="container privacy-content aos-init" data-aos="fade-up" data-aos-delay="100">
+          <h3>1. Information We Collect</h3>
+          <p>We collect various types of information from you to provide and improve our services. The information we collect may include:</p>
+          <ul>
+            <li><strong>Personal Identification Information:</strong> Your name, email address, phone number, mailing address, and other details when you create an account, subscribe to our newsletter, or fill out forms on our Website.</li>
+            <li><strong>Non-Personal Identification Information:</strong> Details like your IP address, browser type, and browsing patterns collected through cookies and similar technologies.</li>
+            <li><strong>Payment Information:</strong> Collected securely via third-party payment processors during transactions.</li>
+            <li><strong>Customer Feedback and Communication:</strong> Information you provide through support inquiries, surveys, or reviews.</li>
+          </ul>
+          <h3>2. How We Use Your Information</h3>
+          <p>We use the information we collect for the following purposes:</p>
+          <ul>
+            <li>To provide and improve our services.</li>
+            <li>To personalize your experience and tailor content to your preferences.</li>
+            <li>To communicate with you about updates, promotions, and newsletters (you may opt-out anytime).</li>
+            <li>To securely process payments.</li>
+            <li>For research and analysis to enhance our Website and services.</li>
+            <li>To comply with legal obligations.</li>
+          </ul>
+          <h3>3. How We Share Your Information</h3>
+          <p>We may share your personal information in the following cases:</p>
+          <ul>
+            <li>With third-party service providers like payment processors or analytics platforms.</li>
+            <li>During business transfers like mergers or acquisitions.</li>
+            <li>To comply with legal obligations or prevent fraud.</li>
+          </ul>
+          <p>We do not sell or rent your personal information to third parties without your consent.</p>
+          <h3>4. Cookies and Tracking Technologies</h3>
+          <p>We use cookies to personalize your experience and analyze website usage. You can control cookies through your browser settings.</p>
+          <h3>5. Data Security</h3>
+          <p>We implement safeguards to protect your information. However, no method of transmission or storage is entirely secure.</p>
+          <h3>6. Your Rights and Choices</h3>
+          <p>You may have the following rights regarding your data:</p>
+          <ul>
+            <li>Access, correction, or deletion of your data.</li>
+            <li>Opt-out of marketing communications.</li>
+            <li>Withdraw consent for data processing.</li>
+          </ul>
+          <p>Contact us to exercise your rights.</p>
+          <h3>7. Third-Party Websites</h3>
+          <p>We are not responsible for the privacy practices of external websites. Review their policies before sharing information.</p>
+          <h3>8. International Transfers of Data</h3>
+          <p>By using our services, you consent to the transfer of your data to countries with differing data protection laws.</p>
+          <h3>9. Children's Privacy</h3>
+          <p>Our services are not intended for children under 13. If we discover that such data is collected, we will delete it.</p>
+          <h3>10. Changes to This Privacy Policy</h3>
+          <p>We may update this Privacy Policy periodically. Review this page for updates.</p>
+          <h3>11. Contact Us</h3>
+          <p>If you have questions, please contact us:</p>
+          <address>
+            EDEN H2<br>
+            Address: Kg Vallencia, Apt 1b, 28 First Main Road, Gandhi Nagar Adyar, Chennai, Tamil Nadu, 600020<br>
+            Email: <a href="mailto:info@edenh2.com">info@edenh2.com</a><br>
+            Phone: +91 9840355052
+          </address>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer id="footer" class="footer light-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">EDENH2</span>
+            </a>
+            <p>
+              At EDENH2, we provide innovative and customized technological
+              solutions that help industries transition toward a hydrogen-driven
+              future.
+            </p>
+            <div class="social-links d-flex mt-4">
+              <a href="https://x.com/EDENH2DIR" class="twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61568444634816" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.linkedin.com/company/edhenh2" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="index.html#">Home</a></li>
+              <li><a href="index.html#about">About us</a></li>
+              <li><a href="index.html#team">Our Team</a></li>
+              <li><a href="index.html#contact">Contact Us</a></li>
+              <li><a href="index.html#careers">Careers</a></li>
+              <li><a href="index.html#terms-and-conditions">Terms of Conditions</a></li>
+              <li><a href="index.html#privacy-policy">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Solutions</h4>
+            <ul>
+                <li><a href="Micro-Gas-Turbine.html">Micro Gas Turbine</a></li>
+                <li><a href="Gas-Sensing.html">Gas Sensing</a></li>
+                <li><a href="Hydrogen-Storage.html">Hydrogen Storage</a></li>
+                <li><a href="Electrolyser-Technology.html"class="active">Electrolyser Technology</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>Kg Vallencia, 1B, 28 First Main Road,</p>
+            <p>Gandhi Nagar Adyar Chennai,</p>
+            <p>Tamil Nadu, 600020</p>
+            <p class="mt-4">
+              <strong>Phone:</strong> <span>+91 9840355052</span>
+            </p>
+            <p><strong>Email:</strong> <span>info@edenh2.com</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container copyright text-center mt-4">
+        <p>
+          © <span>Copyright</span> <strong class="px-1 sitename">EDENH2</strong>
+          <span>All Rights Reserved</span>
+        </p>
+        <div class="credits">
+          Designed by <a href="index.html#">EDENH2</a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="index.html#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <script src="js/validate.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/noframework.waypoints.js"></script>
+    <script src="js/purecounter_vanilla.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+  
+
+</body></html>
