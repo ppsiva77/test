@@ -1,7 +1,7 @@
 :root {
-    --default-font:  sans-serif;
-    --heading-font: sans-serif;
-    --nav-font: sans-serif;
+    --default-font:  "Sweco Sans", Arial, sans-serif;
+    --heading-font: "Sweco Sans", Arial, sans-serif;
+    --nav-font: "Sweco Sans", Arial, sans-serif;
   }
   
   /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -667,14 +667,14 @@
     color: var(--default-color);
     background-color: var(--background-color);
     padding: 60px 0;
-    scroll-margin-top: 84px;
+    /* scroll-margin-top: 84px; */
     overflow: clip;
   }
   
   @media (max-width: 1199px) {
     section,
     .section {
-      scroll-margin-top: 76px;
+      /* scroll-margin-top: 76px; */
     }
   }
   
@@ -683,7 +683,6 @@
   --------------------------------------------------------------*/
   .section-title {
     text-align: center;
-    padding-bottom: 60px;
     position: relative;
   }
   
@@ -750,7 +749,6 @@
   
   .hero:before {
     content: "";
-    background: color-mix(in srgb, var(--background-color), transparent 30%);
     position: absolute;
     inset: 0;
     z-index: 2;
@@ -1759,7 +1757,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&family=Merriweather:wght@400;700&display=swap');
 
 body {
-  font-family:  sans-serif;
+  font-family: "Sweco Sans", Arial, sans-serif;
   font-weight: 400; /* Regular weight */
   line-height: 1.6;
   color: #333;
@@ -1767,13 +1765,13 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: serif;
+  font-family: "Sweco Sans", Arial, sans-serif;
   font-weight: 700; /* Bold for headings */
   color: #222;
 }
 
 p, li {
-  font-family: sans-serif;
+  font-family: "Sweco Sans", Arial, sans-serif;
   font-weight: 400;
   line-height: 1.6;
   color: #555;

@@ -38,13 +38,6 @@
   margin-top: 0.5em;
 }
 
-.content {
-  background: #fff;
-  padding: 1.5em;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 .content h3 {
   color: #2c3e50;
   margin-top: 1.5em;
@@ -65,10 +58,49 @@
   margin-top: 1em;
 }
 
-.quote {
+.quote-section {
+  background-image: url('img/renew.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px 0;
+  color: white;
+  position: relative;
+}
+
+.quote-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay with transparency */
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.quote-content {
+  position: relative;
+  z-index: 2;
+}
+.quote-content p{
+  color: #fafafa;
+}
+.quote-text {
+  font-size: 1.5rem;
   font-style: italic;
-  color: #34495e;
-  margin: 1.5em 0;
+  margin-bottom: 15px;
+}
+
+.quote-author {
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .contact-link {
@@ -145,6 +177,21 @@ p {
     width: 100%;
   }
 }
+.section-title {
+  position: relative;
+  color: #ffffff;
+  /* height: 90vh; */
+  /* background: url('img/micro-gas-turbine.jpg') no-repeat center center/cover; */
+  align-items: center;
+}
+
+.content {
+  background: #fff;
+  padding: 1.5em;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@5.15.4/css/all.min.css">
@@ -189,7 +236,7 @@ p {
   </header>
 
   <main class="main">
-    <section id="micro-gas-turbines" class="section light-background">
+    <section id="micro-gas-turbines" class="section">
       <div class="container section-title aos-init" data-aos="fade-up">
         <h2>Micro Gas Turbines: A Decentralised Energy Solution</h2>
         <p>
@@ -204,8 +251,8 @@ p {
     
         <h3>Key Features:</h3>
         <div class="features-container">
-          <div class="feature-item" style="background-color: #f0f4f8;">
-            <div class="feature-icon" style="background-color: #5a7bb1;">
+          <div class="feature-item" style="background-color: #fafafa;">
+            <div class="feature-icon" style="background-color: #1c4b7e;">
               <i class="fas fa-gas-pump"></i>
             </div>
             <div class="feature-text">
@@ -214,8 +261,8 @@ p {
             </div>
           </div>
     
-          <div class="feature-item" style="background-color: #f0f4f8;">
-            <div class="feature-icon" style="background-color: #a3c1e1;">
+          <div class="feature-item" style="background-color: #fafafa;">
+            <div class="feature-icon" style="background-color: #1c4b7e;">
               <i class="fas fa-fire-alt"></i>
             </div>
             <div class="feature-text">
@@ -224,7 +271,7 @@ p {
             </div>
           </div>
     
-          <div class="feature-item" style="background-color: #e6ebf1;">
+          <div class="feature-item" style="background-color: #fafafa;">
             <div class="feature-icon" style="background-color: #1c4b7e;">
               <i class="fas fa-cogs"></i>
             </div>
@@ -234,8 +281,8 @@ p {
             </div>
           </div>
     
-          <div class="feature-item" style="background-color: #f0f4f8;">
-            <div class="feature-icon" style="background-color: #758fa3;">
+          <div class="feature-item" style="background-color: #fafafa;">
+            <div class="feature-icon" style="background-color: #1c4b7e;">
               <i class="fas fa-lock"></i>
             </div>
             <div class="feature-text">
@@ -244,8 +291,8 @@ p {
             </div>
           </div>
     
-          <div class="feature-item" style="background-color: #e6ebf1;">
-            <div class="feature-icon" style="background-color: #32577c;">
+          <div class="feature-item" style="background-color: #fafafa;">
+            <div class="feature-icon" style="background-color: #1c4b7e;">
               <i class="fas fa-plug"></i>
             </div>
             <div class="feature-text">
@@ -254,8 +301,8 @@ p {
             </div>
           </div>
     
-          <div class="feature-item" style="background-color: #f0f4f8;">
-            <div class="feature-icon" style="background-color: #6a90b7;">
+          <div class="feature-item" style="background-color: #fafafa;">
+            <div class="feature-icon" style="background-color: #1c4b7e;">
               <i class="fas fa-wallet"></i>
             </div>
             <div class="feature-text">
@@ -267,7 +314,7 @@ p {
     
         <h3>Applications:</h3>
         <div class="applications-container1">
-          <div class="application-item" style="background-color: #e6f0fa;">
+          <div class="application-item" style="background-color: #fafafa;">
             <div class="application-icon" style="background-color: #1c4b7e;">
               <i class="fas fa-home"></i>
             </div>
@@ -277,8 +324,8 @@ p {
             </div>
           </div>
     
-          <div class="application-item" style="background-color: #e6f0fa;">
-            <div class="application-icon" style="background-color: #5a7bb1;">
+          <div class="application-item" style="background-color: #fafafa;">
+            <div class="application-icon" style="background-color: #1c4b7e;">
               <i class="fas fa-bus"></i>
             </div>
             <div class="application-text">
@@ -287,8 +334,8 @@ p {
             </div>
           </div>
     
-          <div class="application-item" style="background-color: #e6f0fa;">
-            <div class="application-icon" style="background-color: #758fa3;">
+          <div class="application-item" style="background-color: #fafafa;">
+            <div class="application-icon" style="background-color: #1c4b7e;">
               <i class="fas fa-solar-panel"></i>
             </div>
             <div class="application-text">
@@ -297,8 +344,8 @@ p {
             </div>
           </div>
     
-          <div class="application-item" style="background-color: #e6f0fa;">
-            <div class="application-icon" style="background-color: #6a90b7;">
+          <div class="application-item" style="background-color: #fafafa;">
+            <div class="application-icon" style="background-color: #1c4b7e;">
               <i class="fas fa-industry"></i>
             </div>
             <div class="application-text">
@@ -308,9 +355,16 @@ p {
           </div>
         </div>
     
-        <p class="quote">
-          "With India's ambitious renewable energy targets, EDENH2's MGTs offer a sustainable and decentralised power solution."
-        </p>
+        <div class="quote-section">
+          <div class="quote-content">
+            <p class="quote-text">
+              "With India's ambitious renewable energy targets, EDENH2's MGTs offer a sustainable and decentralised power solution."
+            </p>
+            <p class="quote-author">
+              <strong>EDENH2 Team</strong> – Technical Innovators
+            </p>
+          </div>
+        </div>        
         <p>
           Explore how EDENH2 MGTs can power your business or community with clean, reliable, and efficient energy.
         </p>
@@ -348,8 +402,8 @@ p {
             <li><a href="index.html#team">Our Team</a></li>
             <li><a href="index.html#contact">Contact Us</a></li>
             <li><a href="index.html#careers">Careers</a></li>
-            <li><a href="index.html#terms-and-conditions">Terms of Conditions</a></li>
-            <li><a href="index.html#privacy-policy">Privacy policy</a></li>
+            <li><a href="terms.html">Terms of Conditions</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
           </ul>
         </div>
 

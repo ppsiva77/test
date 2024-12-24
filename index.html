@@ -21,8 +21,8 @@
     <link href="css/main.css" rel="stylesheet">
     <style>
       .cv-form {
-    padding: 2em 0;
-  }
+        padding: 2em 0;
+      }
 
   .form-container {
     margin-top: 1em;
@@ -291,7 +291,32 @@
         height: 115vh; /* Adjust height for mobile */
         background-position: center center; /* Ensure background is centered */
     }
+    #hero p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
   }
+  @media  (max-height: 915px) {
+    #hero {
+        height: 80vh; /* Reduce height further for specific height */
+        background-position: center center; /* Ensure background remains centered */
+    }
+    #hero p {
+        font-size: 1.2rem; /* Adjust font size for better fit */
+        line-height: 1.4; /* Adjust line height */
+        margin-bottom: 20px; /* Reduce margin for compact view */
+    }
+}
+
+.header-animate {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+    background-size: cover;
+    padding: 3px;
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@5.15.4/css/all.min.css">
@@ -337,16 +362,14 @@
 
     <main class="main">
       <section id="hero" class="hero section">
-        <img src="  " alt="" data-aos="fade-in" class="aos-init aos-animate">
-
         <div class="container text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
           <div class="row justify-content-center">
-            <div class="col-lg-8">
+            <div class="col-lg-8 header-animate">
               <h2 style="color: var(--heading-color);">Welcome to Eden H2</h2>
               <p>
                 A leader in advancing the future of clean energy through innovative hydrogen technologies. At Eden H2, we are dedicated to integrating renewable energy with cutting-edge hydrogen solutions to create environmentally safe and efficient energy storage systems. Our commitment extends beyond just developing low-carbon, cost-effective technologies; we strive to make a significant impact in domestic and industrial sectors by promoting the use of clean energy. By focusing on smart cities, utilities, energy sectors, and safety, we aim to drive sustainable progress and shape a greener future for all.
               </p>
-              <a href="index.html#contact" class="btn-get-started">Get Started</a>
+              <!-- <a href="index.html#contact" class="btn-get-started">Get Started</a> -->
             </div>
           </div>
         </div>
@@ -581,32 +604,32 @@
           </p>
         </div>
         <div class="container services-list aos-init" data-aos="fade-up" data-aos-delay="100" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 40px;">
-          <div class="service" style="background-color: #dbe8f1; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+          <div class="service" style="background-color: #fafafa; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
             <i class="fas fa-cogs" style="font-size: 40px; color: #2a3d66;"></i>
             <h3 style="font-size: 24px; color: #2a3d66; margin-top: 20px;">Engineering & Innovation</h3>
             <p style="color: #555;">Develop low-carbon energy technologies, focus on automation, sensors, and advanced methods, and create innovative software solutions.</p>
           </div>
-          <div class="service" style="background-color: #e1e6ef; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+          <div class="service" style="background-color: #fafafa; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
             <i class="fas fa-industry" style="font-size: 40px; color: #2a3d66;"></i>
             <h3 style="font-size: 24px; color: #2a3d66; margin-top: 20px;">Design & Manufacturing</h3>
             <p style="color: #555;">Work on electrolyzer technology, hydrogen technology, micro gas turbines, and enable "Power to X" and "X to Power" solutions.</p>
           </div>
-          <div class="service" style="background-color: #dbe8f1; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+          <div class="service" style="background-color: #fafafa; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
             <i class="fas fa-plug" style="font-size: 40px; color: #2a3d66;"></i>
             <h3 style="font-size: 24px; color: #2a3d66; margin-top: 20px;">IoT Integration</h3>
             <p style="color: #555;">Develop remote monitoring systems, build web/mobile applications, and implement Digital Twin and real-time monitoring systems.</p>
           </div>
-          <div class="service" style="background-color: #e1e6ef; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+          <div class="service" style="background-color: #fafafa; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
             <i class="fas fa-check-circle" style="font-size: 40px; color: #2a3d66;"></i>
             <h3 style="font-size: 24px; color: #2a3d66; margin-top: 20px;">Standards & Compliance</h3>
             <p style="color: #555;">Conduct system testing and ensure functionality, and obtain necessary certifications to meet international standards.</p>
           </div>
-          <div class="service" style="background-color: #dbe8f1; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+          <div class="service" style="background-color: #fafafa; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
             <i class="fas fa-tools" style="font-size: 40px; color: #2a3d66;"></i>
             <h3 style="font-size: 24px; color: #2a3d66; margin-top: 20px;">Support Services</h3>
             <p style="color: #555;">Offer feasibility studies, provide installation, after-market services, and maintenance to ensure long-term performance.</p>
           </div>
-          <div class="service" style="background-color: #e1e6ef; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+          <div class="service" style="background-color: #fafafa; padding: 30px; margin: 15px; flex: 1 1 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
             <i class="fas fa-truck" style="font-size: 40px; color: #2a3d66;"></i>
             <h3 style="font-size: 24px; color: #2a3d66; margin-top: 20px;">Sales & Turnkey Solutions</h3>
             <p style="color: #555;">Deliver fully integrated solutions with a strong emphasis on a global market focus, meeting diverse industry needs.</p>
@@ -772,177 +795,6 @@
           </form>
         </div>
       </section>
-      
-      <section id="terms-and-conditions" class="terms section light-background">
-        <div class="container section-title aos-init" data-aos="fade-up">
-          <h2>Terms and Conditions</h2>
-          <p>
-            Welcome to EDEN H2, a company dedicated to integrating renewable energy with cutting-edge hydrogen solutions to create environmentally safe and efficient energy storage systems. Our commitment extends beyond just developing low-carbon, cost-effective technologies; we strive to make a significant impact in domestic and industrial sectors by promoting the use of clean energy. By focusing on smart cities, utilities, energy sectors, and safety, we aim to drive sustainable progress and shape a greener future for all.
-          </p>
-          <p>
-            By using our website, services, or products, you agree to comply with and be bound by the following terms and conditions. Please read them carefully.
-          </p>
-        </div>
-        <div class="container terms-content aos-init" data-aos="fade-up" data-aos-delay="100">
-          <ol>
-            <li>
-              <h3>Acceptance of Terms</h3>
-              <p>
-                By accessing and using this website (<a href="https://www.edenh2.com">www.edenh2.com</a>) and any of the services provided by EDEN H2 (the "Service"), you agree to abide by these Terms and Conditions, along with any other policies, notices, or guidelines posted on the website. If you do not agree with these Terms, you should not use the website or its services.
-              </p>
-            </li>
-            <li>
-              <h3>Changes to Terms</h3>
-              <p>
-                EDEN H2 reserves the right to modify, update, or revise these Terms and Conditions at any time without prior notice. All changes will be posted on this page, and the revised Terms and Conditions will take effect immediately upon posting. It is your responsibility to review these Terms periodically to stay informed of any changes.
-              </p>
-            </li>
-            <li>
-              <h3>Use of the Website</h3>
-              <p>You agree to use this website for lawful purposes and in accordance with all applicable local, state, and international laws and regulations. You may not use the website:</p>
-              <ul>
-                <li>In any way that violates any applicable laws or regulations</li>
-                <li>To transmit harmful, fraudulent, or illegal content</li>
-                <li>To interfere with the website’s functioning or security</li>
-                <li>To access or attempt to access data or accounts not intended for you</li>
-              </ul>
-            </li>
-            <li>
-              <h3>User Registration</h3>
-              <p>
-                Certain features of the website may require you to create an account. If you register for an account, you are responsible for maintaining the confidentiality of your account information, including your password, and for all activities that occur under your account. You agree to notify EDEN H2 immediately of any unauthorized use of your account.
-              </p>
-            </li>
-            <li>
-              <h3>Intellectual Property</h3>
-              <p>
-                The content, logos, graphics, images, text, videos, and other materials available on the website are owned by EDEN H2 or licensed to EDEN H2 and are protected by intellectual property laws. You may not copy, reproduce, distribute, or create derivative works from any part of this website without the prior written consent of EDEN H2.
-              </p>
-            </li>
-            <li>
-              <h3>Third-Party Links</h3>
-              <p>
-                This website may contain links to third-party websites. These links are provided for your convenience, and EDEN H2 does not control or endorse these websites. By clicking on third-party links, you acknowledge that EDEN H2 is not responsible for the content, privacy policies, or practices of such third-party websites.
-              </p>
-            </li>
-            <li>
-              <h3>Privacy Policy</h3>
-              <p>
-                Your use of the website is also governed by our Privacy Policy, which can be found at <a href="#">[insert link to privacy policy]</a>. By using the website, you consent to the practices outlined in the Privacy Policy.
-              </p>
-            </li>
-            <li>
-              <h3>Limitation of Liability</h3>
-              <p>
-                To the fullest extent permitted by law, EDEN H2 will not be liable for any direct, indirect, incidental, special, or consequential damages arising from your use of the website or its services. This includes, without limitation, damages for loss of profits, data, or other intangible losses, even if EDEN H2 has been advised of the possibility of such damages.
-              </p>
-            </li>
-            <li>
-              <h3>Indemnification</h3>
-              <p>
-                You agree to indemnify, defend, and hold harmless EDEN H2, its officers, directors, employees, agents, and affiliates from any claims, liabilities, losses, damages, or expenses (including legal fees) arising out of your use of the website, violation of these Terms, or infringement of any intellectual property or other rights.
-              </p>
-            </li>
-            <li>
-              <h3>Termination</h3>
-              <p>
-                EDEN H2 reserves the right to suspend or terminate your access to the website and services at any time, without notice, for any reason, including for violations of these Terms and Conditions. Upon termination, your right to use the website will immediately cease.
-              </p>
-            </li>
-            <li>
-              <h3>Governing Law</h3>
-              <p>
-                These Terms and Conditions will be governed by and construed in accordance with the laws of [Insert Jurisdiction]. Any disputes arising under these Terms will be subject to the exclusive jurisdiction of the courts in [Insert Jurisdiction].
-              </p>
-            </li>
-            <li>
-              <h3>Severability</h3>
-              <p>
-                If any provision of these Terms and Conditions is found to be invalid, illegal, or unenforceable, the remaining provisions will remain in full force and effect.
-              </p>
-            </li>
-            <li>
-              <h3>Contact Information</h3>
-              <p>
-                If you have any questions about these Terms and Conditions, please contact us at:
-              </p>
-              <address>
-                <strong>EDENH2</strong><br>
-                Kg Vallencia, Apt 1b, 28 First Main Road, Gandhi Nagar Adyar, Chennai, Tamil Nadu, 600020<br>
-                Email: <a href="mailto:info@edenh2.com">info@edenh2.com</a><br>
-                Phone: <a href="tel:+919840355052">+91 9840355052</a>
-              </address>
-            </li>
-          </ol>
-        </div>
-      </section>      
-      <section id="privacy-policy" class="privacy-policy section">
-        <div class="container section-title aos-init" data-aos="fade-up">
-          <h2>Privacy Policy for EDEN H2</h2>
-          <p><strong>Effective Date:</strong> 10.11.2024</p>
-          <p>
-            At EDEN H2 ("we", "us", "our"), we are committed to protecting and respecting your privacy. This Privacy Policy outlines how we collect, use, store, and protect your personal information when you visit our website 
-            <a href="http://www.edenh2.com" target="_blank">www.edenh2.com</a> (the "Website") or interact with our products and services. By using our Website and services, you consent to the practices described in this Privacy Policy.
-          </p>
-        </div>
-        <div class="container privacy-content aos-init" data-aos="fade-up" data-aos-delay="100">
-          <h3>1. Information We Collect</h3>
-          <p>We collect various types of information from you to provide and improve our services. The information we collect may include:</p>
-          <ul>
-            <li><strong>Personal Identification Information:</strong> Your name, email address, phone number, mailing address, and other details when you create an account, subscribe to our newsletter, or fill out forms on our Website.</li>
-            <li><strong>Non-Personal Identification Information:</strong> Details like your IP address, browser type, and browsing patterns collected through cookies and similar technologies.</li>
-            <li><strong>Payment Information:</strong> Collected securely via third-party payment processors during transactions.</li>
-            <li><strong>Customer Feedback and Communication:</strong> Information you provide through support inquiries, surveys, or reviews.</li>
-          </ul>
-          <h3>2. How We Use Your Information</h3>
-          <p>We use the information we collect for the following purposes:</p>
-          <ul>
-            <li>To provide and improve our services.</li>
-            <li>To personalize your experience and tailor content to your preferences.</li>
-            <li>To communicate with you about updates, promotions, and newsletters (you may opt-out anytime).</li>
-            <li>To securely process payments.</li>
-            <li>For research and analysis to enhance our Website and services.</li>
-            <li>To comply with legal obligations.</li>
-          </ul>
-          <h3>3. How We Share Your Information</h3>
-          <p>We may share your personal information in the following cases:</p>
-          <ul>
-            <li>With third-party service providers like payment processors or analytics platforms.</li>
-            <li>During business transfers like mergers or acquisitions.</li>
-            <li>To comply with legal obligations or prevent fraud.</li>
-          </ul>
-          <p>We do not sell or rent your personal information to third parties without your consent.</p>
-          <h3>4. Cookies and Tracking Technologies</h3>
-          <p>We use cookies to personalize your experience and analyze website usage. You can control cookies through your browser settings.</p>
-          <h3>5. Data Security</h3>
-          <p>We implement safeguards to protect your information. However, no method of transmission or storage is entirely secure.</p>
-          <h3>6. Your Rights and Choices</h3>
-          <p>You may have the following rights regarding your data:</p>
-          <ul>
-            <li>Access, correction, or deletion of your data.</li>
-            <li>Opt-out of marketing communications.</li>
-            <li>Withdraw consent for data processing.</li>
-          </ul>
-          <p>Contact us to exercise your rights.</p>
-          <h3>7. Third-Party Websites</h3>
-          <p>We are not responsible for the privacy practices of external websites. Review their policies before sharing information.</p>
-          <h3>8. International Transfers of Data</h3>
-          <p>By using our services, you consent to the transfer of your data to countries with differing data protection laws.</p>
-          <h3>9. Children's Privacy</h3>
-          <p>Our services are not intended for children under 13. If we discover that such data is collected, we will delete it.</p>
-          <h3>10. Changes to This Privacy Policy</h3>
-          <p>We may update this Privacy Policy periodically. Review this page for updates.</p>
-          <h3>11. Contact Us</h3>
-          <p>If you have questions, please contact us:</p>
-          <address>
-            EDEN H2<br>
-            Address: Kg Vallencia, Apt 1b, 28 First Main Road, Gandhi Nagar Adyar, Chennai, Tamil Nadu, 600020<br>
-            Email: <a href="mailto:info@edenh2.com">info@edenh2.com</a><br>
-            Phone: +91 9840355052
-          </address>
-        </div>
-      </section>
-      
     </main>
 
     <footer id="footer" class="footer light-background">
@@ -972,8 +824,8 @@
               <li><a href="index.html#team">Our Team</a></li>
               <li><a href="index.html#contact">Contact Us</a></li>
               <li><a href="index.html#careers">Careers</a></li>
-              <li><a href="index.html#terms-and-conditions">Terms of Conditions</a></li>
-              <li><a href="index.html#privacy-policy">Privacy policy</a></li>
+              <li><a href="terms.html">Terms of Conditions</a></li>
+              <li><a href="privacy.html">Privacy policy</a></li>
             </ul>
           </div>
 
@@ -1021,8 +873,7 @@
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-
     <script src="js/main.js"></script>
-  
 
-</body></html>
+</body>
+</html>
