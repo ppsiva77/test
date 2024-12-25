@@ -285,105 +285,78 @@
       transform: scale(1.05);
     }
 
-    .header-animate {
-  background: linear-gradient(to right, rgb(68 192 114 / 89%), rgb(42 145 195 / 96%));
-  background-size: cover;
+    #hero {
+  position: relative;
+  background: url('img/bg.jpg') no-repeat center center/cover;
+  color: #ffffff;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+#hero h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* Fluid typography */
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fafafa;
+}
+
+#hero p {
+  font-size: clamp(1rem, 2.5vw, 1.9rem); /* Fluid typography */
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #fafafa;
+}
+
+.header-animate {
+  background: linear-gradient(to right, rgba(68, 192, 114, 0.89), rgba(42, 145, 195, 0.96));
   border-radius: 40px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding: 30px;
+  padding: clamp(1rem, 5vw, 3rem); /* Responsive padding */
   margin: 20px;
   position: relative;
   overflow: hidden;
+  animation: fadeInUp 1s ease-in-out; /* Animation */
 }
-    @media (max-width: 768px) {
-    #hero {
-        height: 115vh; /* Adjust height for mobile */
-        background-position: center center; /* Ensure background is centered */
-    }
-    #hero p {
-        font-size: 1.2rem;
-        line-height: 1.6;
-        margin-bottom: 30px;
-    }
-    .header-animate{
-      padding: 10px;
-    }
+
+@media (max-width: 768px) {
+  #hero {
+    height: 115vh; /* Adjust for smaller screens */
   }
-  @media  (max-height: 915px) {
-    #hero {
-        height: 80vh; /* Reduce height further for specific height */
-        background-position: center center; /* Ensure background remains centered */
-    }
-    #hero p {
-        font-size: 1.2rem; /* Adjust font size for better fit */
-        line-height: 1.4; /* Adjust line height */
-        margin-bottom: 20px; /* Reduce margin for compact view */
-    }
-    .header-animate{
-      padding: 10px;
-    }
+
+  #hero p {
+    font-size: 1.2rem;
+  }
+  .header-animate {
+    padding: 10px;
+  }
+}
+
+@media (max-height: 915px) {
+  #hero {
+    height: 80vh;
+  }
 }
 
 @media screen and (min-width: 990px) and (max-width: 1100px) {
-    #hero {
-        height: 95vh; /* Adjust height for mobile */
-        background-position: center center; /* Ensure background is centered */
-    }
-
-    #hero p {
-        font-size: 1.2rem; /* Adjusted font size for better readability */
-        line-height: 1.6; /* Maintain comfortable line spacing */
-        margin-bottom: 30px; /* Adjust spacing as needed */
-    }
+  #hero {
+    height: 95vh;
+  }
 }
 
-.content-box {
-  background: rgba(255, 255, 255, 0.85);
-  padding: 20px 30px;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  display: inline-block;
-  max-width: 800px;
-  margin: 0 auto;
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-h1 {
-  font-family: 'Arial', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #2b5b84;
-  margin-bottom: 15px;
-}
-
-p {
-  font-family: 'Arial', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #444;
-  margin-bottom: 15px;
-}
-
-.cta-button {
-  background: linear-gradient(to right, #42a5f5, #68c197);
-  border: none;
-  padding: 10px 20px;
-  color: white;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 25px;
-  cursor: pointer;
-  text-transform: uppercase;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.cta-button:hover {
-  background: linear-gradient(to right, #68c197, #42a5f5);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
-}
-
 
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
