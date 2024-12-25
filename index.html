@@ -241,31 +241,6 @@
     color: #3498db;
   }
 
-  #hero {
-      position: relative;
-      background: url('img/bg.jpg') no-repeat center center/cover;
-      color: #ffffff;
-      height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0.7;
-    }
-
-    #hero h2 {
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin-bottom: 20px;
-      color: #fafafa;
-    }
-
-    #hero p {
-      font-size: 1.9rem;
-      line-height: 1.6;
-      margin-bottom: 30px;
-      color: #fafafa;
-    }
-
     .btn-get-started {
       display: inline-block;
       background-color: #4caf50; /* Green button */
@@ -284,8 +259,7 @@
       background-color: #388e3c; /* Darker green on hover */
       transform: scale(1.05);
     }
-
-    #hero {
+#hero {
   position: relative;
   background: url('img/bg.jpg') no-repeat center center/cover;
   color: #ffffff;
@@ -293,68 +267,63 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.8;
 }
 
 #hero h2 {
-  font-size: clamp(1.5rem, 5vw, 2.5rem); /* Fluid typography */
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #fafafa;
+    font-size: 3.5rem;
+    font-weight: 900; /* Increased thickness */
+    margin-bottom: 20px;
+    color: #ffffff; /* Pure white color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Adds depth and glow */
+    letter-spacing: 1px; /* Slight spacing for a cleaner, bold look */
 }
 
-#hero p {
-  font-size: clamp(1rem, 2.5vw, 1.5rem); /* Fluid typography */
+#hero p.quote {
+  font-size: 1.8rem; /* Adjust the font size for the quote */
   line-height: 1.6;
-  margin-bottom: 30px;
-  color: #fafafa;
+  font-weight: 600;
+  color: #ffffff; /* Make the text white for better visibility */
+  font-style: italic; /* Optional: Italicize the quote */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add a shadow to improve readability on the background image */
+  margin-bottom: 0; /* Optional: Remove additional margin for the quote */
 }
 
-.header-animate {
-  background: linear-gradient(to right, rgba(68, 192, 114, 0.89), rgba(42, 145, 195, 0.96));
-  border-radius: 40px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: clamp(1rem, 5vw, 3rem); /* Responsive padding */
-  margin: 20px;
-  position: relative;
-  overflow: hidden;
-  animation: fadeInUp 1s ease-in-out; /* Animation */
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(121 109 109 / 82%);
+  z-index: 1;
 }
-
+.img-fluid{
+    height: 500px;
+  }
 @media (max-width: 768px) {
   #hero {
-    height: 115vh; /* Adjust for smaller screens */
+    height: 90vh;
   }
 
-  #hero p {
-    font-size: 1.2rem;
+  #hero h2 {
+    font-size: 2rem;
+    font-weight: 900; /* Increased thickness */
+    margin-bottom: 20px;
+    color: #ffffff; /* Pure white color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   }
-  .header-animate {
-    padding: 10px;
-  }
-}
 
-@media (max-height: 915px) {
-  #hero {
-    height: 80vh;
+  #hero p.quote {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  font-weight: 600;
+  color: #ffffff; /* Make the text white for better visibility */
+  font-style: italic; /* Optional: Italicize the quote */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   }
-}
-
-@media screen and (min-width: 990px) and (max-width: 1100px) {
-  #hero {
-    height: 95vh;
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+  .img-fluid{
+    height: auto;
   }
 }
 
@@ -407,14 +376,13 @@
           <div class="row justify-content-center">
             <div class="col-lg-8 header-animate">
               <h2>Welcome to Eden H2</h2>
-              <p>
-                A leader in advancing the future of clean energy through innovative hydrogen technologies. At Eden H2, we are dedicated to integrating renewable energy with cutting-edge hydrogen solutions to create environmentally safe and efficient energy storage systems. Our commitment extends beyond just developing low-carbon, cost-effective technologies; we strive to make a significant impact in domestic and industrial sectors by promoting the use of clean energy. By focusing on smart cities, utilities, energy sectors, and safety, we aim to drive sustainable progress and shape a greener future for all.
+              <p class="quote">
+                “A leader in advancing the future of clean energy through innovative hydrogen technologies.”
               </p>
-              <!-- <a href="index.html#contact" class="btn-get-started">Get Started</a> -->
             </div>
           </div>
         </div>
-      </section>
+      </section>      
 
       <style>
         #about {
@@ -513,7 +481,9 @@
                 <p>
                   Eden H2 is a socially responsible company providing innovative technological solutions for integrating renewable energy with disruptive hydrogen technologies for creating environmentally safe energy storage solutions and promoting the use of clean energy in various domestic and industrial sectors.<br>
                   The company designs, develops, manufactures, and installs low-carbon, low-cost hydrogen technologies for efficient energy solutions. The company also provides integration solutions to cater Power-to-X and X-to-Power requirements at domestic and industrial scale.<br>
-                  We offer our EPC services predominantly in thrust areas such as Smart Cities, Utilities & Energy Sector, Sensor Integration, and Safety.
+                  We offer our EPC services predominantly in thrust areas such as Smart Cities, Utilities & Energy Sector, Sensor Integration, and Safety.<br>
+                  At Eden H2, we are dedicated to integrating renewable energy with cutting-edge hydrogen solutions to create environmentally safe and efficient energy storage systems. Our commitment extends beyond just developing low-carbon, cost-effective technologies; we strive to make a significant impact in domestic and industrial sectors by promoting the use of clean energy.<br>
+                  By focusing on smart cities, utilities, energy sectors, and safety, we aim to drive sustainable progress and shape a greener future for all.
                 </p>
       
                 <h3>Our Mission, Vision, and Values</h3>
