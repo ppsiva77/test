@@ -667,7 +667,7 @@
     color: var(--default-color);
     background-color: var(--background-color);
     padding: 60px 0;
-    /* scroll-margin-top: 84px; */
+    scroll-margin-top: 84px;
     overflow: clip;
   }
   
